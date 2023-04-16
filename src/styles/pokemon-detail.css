@@ -1,0 +1,50 @@
+.containt-detail{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.containt-detail .img-pokemon{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
+
+.information-2{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+
+
+.containt-detail .sprite-pokemon{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  gap: 1em;
+  overflow-x: auto;
+}
+
+.sprite-pokemon .item-img{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+}
+
+.information-2 .item-information{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+.item-information .title{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+.item-information .list{
+  margin-top: 0;
+}

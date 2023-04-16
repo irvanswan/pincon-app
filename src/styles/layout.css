@@ -1,17 +1,80 @@
 body{
   background-color: lightgray;
+  overflow: 'auto';
 }
 
 .container{
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 30vw;
+  min-height: 100vh;
+  width: 40vw;
+  overflow: hidden;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
+.navbar{
+  width: 40vw;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  top: 0; 
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Sedgwick Ave Display', cursive;
+  line-height: 1.3;
+  letter-spacing: 0.3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.3em;
+}
+
+.navbar .content{
+  padding: 1em;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.menu{
+  width: 40vw;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  bottom: 0; 
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Sedgwick Ave Display', cursive;
+  line-height: 1.3;
+  letter-spacing: 0.3em;
+  font-size: 1.3em;
+}
+
+.menu .content{
+  padding: 1em;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
 /* 2xl */
 @media screen and (min-width: 1280px) {
   
@@ -28,6 +91,9 @@ body{
 /* md */
 @media screen and (max-width: 767px) {
   .container{
+    width: 100vw;
+  }
+  .navbar, .menu{
     width: 100%;
   }
 
